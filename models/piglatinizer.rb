@@ -9,7 +9,7 @@ class PigLatinizer
       array.join << "way"
     else
       while !VOWELS.include?(array[0].downcase)
-        array.push(array.shift)
+        array << array.shift
       end
       array.join << "ay"
     end
